@@ -8,9 +8,20 @@
     <b><h1 style="color:Orange;"> Jo Hello!</h1></b>
     <p style="color:Violet;">Spectacular first paragraph. Totally mind-blowing.</p>
     <a href="text.html"> Click for a surprise... </a>
-    <button type="button" 
-    onclick="document.getElementById('demo').innerHTML = Date()" >
-    Click me to get the date!</button>
+    
+    <script>
+      function light() {
+      pic = "pic_bulbon.gif"
+      document.getElementById('myImage').src = pic;
+    }
+      
+    </script>
+   
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+    <p>
+    <button type="button" onclick="light()">Light On</button>
+    </p>
  
 <p id="demo">welp</p>
   </body>
