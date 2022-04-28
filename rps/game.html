@@ -22,7 +22,45 @@
       <button type="button" onclick="document.getElementById('RPS').src='paper.png'; document.getElementById('testtext').innerHTML = 2;"> <img src="paperF.png" alt="paper" style="width:100px"></button>
       <button type="button" onclick="document.getElementById('RPS').src='scissors.png'; document.getElementById('testtext').innerHTML = 3;" > <img src="scissorsF.png" alt="scissors" style="width:100px"></button>
       <script>
-        
+        function getRndInteger(min, max) {
+          Number(end = 0)
+	  Number(n1 = Math.floor(Math.random() * (max - min)) + min);
+          Number(n2 = document.getElementById('testtext').innerHTML);
+	  console.log(n2);
+          //Number(n2 = 1)
+          if(n1 == n2){
+    	      end = 2; // gleichstand
+    	      return end;
+          }
+          if(n1 == 1 && n2 == 2){
+    	      end = 3; // win
+    	      return end;
+          }
+          if(n1 == 1 && n2 == 3){
+    	      end = 1; // lose
+    	      return end;
+          }
+          if(n1 == 2 && n2 == 1){
+    	      end = 1; // lose
+    	      return end;
+          }
+          if(n1 == 2 && n2 == 3){
+    	      end = 3; // win
+    	      return end;
+          }
+          if(n1 == 3 && n2 == 1){
+    	      end = 3; // win
+    	      return end;
+          }
+          if(n1 == 3 && n2 == 2){
+    	      end = 1; // lose
+    	      return end;
+          }
+    
+        }
+        console.log(getRndInteger(1,4) + " Ergebnis");
+        console.log(n1 + " Gegner")
+        console.log(n2 + " Wir")  
       </script>
       
 
