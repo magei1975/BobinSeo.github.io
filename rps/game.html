@@ -18,14 +18,14 @@
        </br>
        </br>
 
-      <button type="button" onclick="document.getElementById('RPS').src='rock.png'; document.getElementById('testtext').innerHTML = 1; getRndInteger(1, 4);"> <img src="rockF.png" alt="rock" style="width:100px"></button>
-      <button type="button" onclick="document.getElementById('RPS').src='paper.png'; document.getElementById('testtext').innerHTML = 2; getRndInteger(1, 4);"> <img src="paperF.png" alt="paper" style="width:100px"></button>
-      <button type="button" onclick="document.getElementById('RPS').src='scissors.png'; document.getElementById('testtext').innerHTML = 3; getRndInteger(1, 4);" > <img src="scissorsF.png" alt="scissors" style="width:100px"></button>
+      <button type="button" onclick="document.getElementById('RPS').src='rock.png'; document.getElementById('testtext').innerHTML = 1; getRndInteger(1, 4, 1);"> <img src="rockF.png" alt="rock" style="width:100px"></button>
+      <button type="button" onclick="document.getElementById('RPS').src='paper.png'; document.getElementById('testtext').innerHTML = 2; getRndInteger(1, 4, 2);"> <img src="paperF.png" alt="paper" style="width:100px"></button>
+      <button type="button" onclick="document.getElementById('RPS').src='scissors.png'; document.getElementById('testtext').innerHTML = 3; getRndInteger(1, 4, 3);" > <img src="scissorsF.png" alt="scissors" style="width:100px"></button>
       <script>
-        function getRndInteger(min, max) {
+        function getRndInteger(min, max, choice) {
           Number(end = 0)
 	  Number(n1 = Math.floor(Math.random() * (max - min)) + min);
-          Number(n2 = document.getElementById('testtext').innerHTML);
+          Number(n2 = choice);
 	  console.log(n2);
           //Number(n2 = 1)
           if(n1 == n2){
