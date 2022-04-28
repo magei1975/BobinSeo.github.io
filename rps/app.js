@@ -3,7 +3,7 @@ function getRndInteger(min, max, choice) {
 	        let n1 = Math.floor(Math.random() * (max - min)) + min);
           	let n2 = choice;
 	        console.log(n2);
-          //Number(n2 = 1)
+          //Number(n2 = 1);
           if(n1 == n2){
     	      end = 2; // gleichstand
     	      return end;
