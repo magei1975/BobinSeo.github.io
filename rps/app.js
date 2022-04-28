@@ -33,6 +33,15 @@ function getRndInteger(min, max, choice) {
     	      return end;
           }
 	console.log(end)
+	if(n2 == 1){
+		onclick="document.getElementById('RPS').src='rock.png';
+	}
+	if(n2 == 2){
+		onclick="document.getElementById('RPS').src='paper.png';
+	}
+	if(n2 == 3){
+		onclick="document.getElementById('RPS').src='scissors.png';
+	}
         }
         
 
