@@ -32,9 +32,7 @@ function getRndInteger(min, max, choice) {
     	      end = 1; // lose
     	      return end;
           }
-    	console.log(getRndInteger(1,4) + " Ergebnis");
-        console.log(n1 + " Gegner")
-        console.log(n2 + " Wir")  
+	console.log(end)
         }
         
 
