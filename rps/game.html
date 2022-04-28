@@ -12,6 +12,7 @@
       <p>Let's play!</p>
       
       <img id="RPS" src="" style="width:400px">
+      <p id='testText'>Test</p>
       
        </br>
        </br>
@@ -20,6 +21,21 @@
       <button type="button" onclick="document.getElementById('RPS').src='rock.png'"> <img src="rockF.png" alt="rock" style="width:100px"></button>
       <button type="button" onclick="document.getElementById('RPS').src='paper.png'"> <img src="paperF.png" alt="paper" style="width:100px"></button>
       <button type="button" onclick="document.getElementById('RPS').src='scissors.png'"> <img src="scissorsF.png" alt="scissors" style="width:100px"></button>
+      <script>
+        Number(choice = 0);
+        if(document.getElementById('RPS').src == 'rock.png'){
+            choice = 1;
+            document.getElementById('testText').innerHTML = choice;
+           }
+        if(document.getElementById('RPS').src == 'paper.png'){
+            choice = 2;
+            document.getElementById('testText').innerHTML = choice;
+           }
+        if(document.getElementById('RPS').src == 'scissors.png'){
+            choice = 3;
+            document.getElementById('testText').innerHTML = choice;
+           }
+      </script>
       
 
 
