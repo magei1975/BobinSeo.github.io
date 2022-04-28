@@ -23,15 +23,16 @@
       <button type="button" onclick="document.getElementById('RPS').src='scissors.png'" onclick="document.getElementById('testtext').innerHTML = 1"> <img src="scissorsF.png" alt="scissors" style="width:100px"></button>
       <script>
         Number(choice = 0);
-        if(document.getElementById('RPS').src == 'rock.png'){
+        
+        if(document.getElementById('RPS').getAttribute("src") == 'rock.png'){
             choice = 1;
             document.getElementById('testText').innerHTML = choice;
            }
-        if(document.getElementById('RPS').src == 'paper.png'){
+        if(document.getElementById('RPS').getAttribute("src") == 'paper.png'){
             choice = 2;
             document.getElementById('testText').innerHTML = choice;
            }
-        if(document.getElementById('RPS').src == 'scissors.png'){
+        if(document.getElementById('RPS').getAttribute("src") == 'scissors.png'){
             choice = 3;
             document.getElementById('testText').innerHTML = choice;
            }
